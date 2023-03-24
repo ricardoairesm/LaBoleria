@@ -3,6 +3,7 @@ import urlSchema from "../schemas/urlSchema.js";
 
 
 export async function createCake(req, res) {
+    
     const { name, price, description, image } = req.body;
     const validData = (schema, data) => !schema.validate(data).error;
 
